@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio de Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <p>Projetos pessoais de programação</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Bem-vindo ao meu portfólio</h2>
+            <p>Confira alguns dos projetos pessoais que desenvolvi utilizando diversas tecnologias e linguagens de programação.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Projetos Recentes</h2>
+            <div class="projects-grid" id="projects-container"></div>
+        </section>
+    </main>
+
+    <script>
+        const projects = [
+            {
+                "title": "DATASARS — Análise de dados básica sobre Covid-19",
+                "description": "Este projeto foi criado com o objetivo de facilitar a análise de dados relativos às possíveis consequências da Covid-19. A solução incluiu o uso de Python e Flask no backend e o uso do Excel para gerar os gráficos (página estática). Neste projeto, concentrei-me no processo. Este projeto foi o meu primeiro contacto com a metodologia ágil e com um projeto de software real, um projeto simples, mas esta experiência trouxe-me vários desafios, especialmente em relação ao planejamento e organização, uma vez que eu estava na posição de Scrum Master. As dificuldades foram superadas com a ajuda da equipe e dos professores, e fomos bem-sucedidos no projeto.",
+                "image": "./media/logoDataSars.png",
+                "alt_text": "Imagem ilustrativa do datasars",
+                "technologies": ["HTML", "Javascript", "CSS", "Python"],
+                "code_link": "https://github.com/Grupo-Syntax-Squad/API"
+            },
+            {
+                "title": "Callgenie — Plataforma de gestão de chamados",
+                "description": "O objetivo deste projeto é construir um CRUD que facilite a gestão de tickets. Neste projeto, concentrei-me no processo e no backend. Este projeto foi muito interessante para o meu desenvolvimento pessoal e, dentro da metodologia, novamente na posição de Scrum Master, foi um momento para aprender mais sobre as cerimónias e os processos, nesta oportunidade um projeto que ainda era simples, mas mais elaborado do que o primeiro. Esta experiência trouxe-me vários desafios, principalmente em relação a um planeamento mais detalhado, ao estabelecimento de uma comunicação sem ruídos e a um processo mais transparente. No final do desafio, as dificuldades foram superadas com a ajuda da equipe e dos professores, e fomos bem-sucedidos no projeto.",
+                "image": "https://placehold.co/600x400?text=Imagem+do+outro+projeto", 
+                "alt_text": "Imagem ilustrativa do callgenie",
+                "technologies": ["Typescript", "MySQL", "React", "Sequelize"],
+                "code_link": "#"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('projects-container');
+            
+            projects.forEach(project => {
+                const techTags = project.technologies.map(tech => 
+                    `<span class="tech-tag">${tech}</span>`
+                ).join('');
+
+                container.innerHTML += `
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="${project.image}" alt="${project.alt_text}" />
+                        </div>
+                        <div class="project-info">
+                            <h3>${project.title}</h3>
+                            <p>${project.description}</p>
+                            <div class="tech-tags">${techTags}</div>
+                            <div class="project-links">
+                                <a href="${project.code_link}" class="btn btn-secondary">Código</a>
+                            </div>
+                        </div>
+                    </article>
+                `;
+            });
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <p>Entre em contato para saber mais sobre meus projetos</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ryan-araujo0109/" target="_blank">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">ryanarajo@yahoo.com.br</a>
+            </div>
+            <p>&copy; 2025 Meu Portfólio</p>
+        </div>
+    </footer>
+</body>
+</html>
