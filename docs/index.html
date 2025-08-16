@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio de Projetos</title>
+    <title>Portfólio Ryan Araujo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Meu Portfólio</h1>
-            <p>Projetos pessoais de programação</p>
+            <h1>Ryan Verissimo de Araujo</h1>
+            <h3>Desenvolvedor de Software</h3>
         </div>
     </header>
 
     <main class="container">
         <section class="intro">
             <h2>Bem-vindo ao meu portfólio</h2>
-            <p>Confira alguns dos projetos pessoais que desenvolvi utilizando diversas tecnologias e linguagens de programação.</p>
+            <p>
+                <em>"No campo da tecnologia, a simplificação é sempre um grande avanço."</em>
+                - Boulle, Pierre
+            </p>
         </section>
 
+        <section class="about">
+            <img src="./media/foto_roupa_social.jpeg" alt="foto ryan" class="personal-image"> 
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá, meu nome é Ryan Araujo, atualmente estou estudando tecnologia em desenvolvimento de software. 
+                Gosto muito de trabalhar com lógica - foi daí que surgiu o meu interesse por programação - praticar esportes e conhecer coisas novas.
+                Tenho facilidade em me comunicar, me dou bem trabalhando em grupo e estou sempre disposto a aprender, especialmente novas maneiras de fazer coisas usuais.
+                Minha jornada na programação começou com o desejo de entender como as coisas funcionam por trás das telas. Desde então, tenho me dedicado a aprender e aplicar 
+                tecnologias que possam resolver problemas reais e melhorar a vida das pessoas. Acredito que a tecnologia deve ser uma ferramenta para simplificar e otimizar processos, 
+                e é isso que busco em cada projeto que participo.
+            </p>
+        </section>
+        <hr>
         <section class="projects">
-            <h2>Projetos Recentes</h2>
+            <h2>Projetos Desenvolvidos (API)</h2>
             <div class="projects-grid" id="projects-container"></div>
         </section>
     </main>
@@ -32,17 +48,25 @@
                 "title": "DATASARS — Análise de dados básica sobre Covid-19",
                 "description": "Este projeto foi criado com o objetivo de facilitar a análise de dados relativos às possíveis consequências da Covid-19. A solução incluiu o uso de Python e Flask no backend e o uso do Excel para gerar os gráficos (página estática). Neste projeto, concentrei-me no processo. Este projeto foi o meu primeiro contacto com a metodologia ágil e com um projeto de software real, um projeto simples, mas esta experiência trouxe-me vários desafios, especialmente em relação ao planejamento e organização, uma vez que eu estava na posição de Scrum Master. As dificuldades foram superadas com a ajuda da equipe e dos professores, e fomos bem-sucedidos no projeto.",
                 "image": "./media/logoDataSars.png",
-                "alt_text": "Imagem ilustrativa do datasars",
+                "alt_text": "Imagem ilustrativa do Datasars",
                 "technologies": ["HTML", "Javascript", "CSS", "Python"],
                 "code_link": "https://github.com/Grupo-Syntax-Squad/API"
             },
             {
-                "title": "Callgenie — Plataforma de gestão de chamados",
+                "title": "Callgenie — Sistema de gestão de chamados",
                 "description": "O objetivo deste projeto é construir um CRUD que facilite a gestão de tickets. Neste projeto, concentrei-me no processo e no backend. Este projeto foi muito interessante para o meu desenvolvimento pessoal e, dentro da metodologia, novamente na posição de Scrum Master, foi um momento para aprender mais sobre as cerimónias e os processos, nesta oportunidade um projeto que ainda era simples, mas mais elaborado do que o primeiro. Esta experiência trouxe-me vários desafios, principalmente em relação a um planeamento mais detalhado, ao estabelecimento de uma comunicação sem ruídos e a um processo mais transparente. No final do desafio, as dificuldades foram superadas com a ajuda da equipe e dos professores, e fomos bem-sucedidos no projeto.",
-                "image": "https://placehold.co/600x400?text=Imagem+do+outro+projeto", 
-                "alt_text": "Imagem ilustrativa do callgenie",
+                "image": "./media/logoCallgenie.png", 
+                "alt_text": "Imagem ilustrativa do Callgenie",
                 "technologies": ["Typescript", "MySQL", "React", "Sequelize"],
-                "code_link": "#"
+                "code_link": "https://github.com/Grupo-Syntax-Squad/CallGenie"
+            },
+            {
+                "title": "Assetbox — Sistema de gestão de ativos",
+                "description": "Este projeto visa fornecer uma visão geral de todos os ativos de uma empresa através de um sistema baseado na web. O sistema utiliza Java Spring Boot e MySQL no backend e é estilizado com Bulma no frontend. Neste projeto, o meu foco foi no processo e no desenvolvimento do backend, embora eu também tenha tido algum envolvimento no desenvolvimento do frontend. Este projeto foi muito importante para meu crescimento academico, pois marcou a minha primeira experiência na função de programador e me deu uma visão do outro lado do processo. Além disso, permitiu-me contribuir mais para o desenvolvimento de software e melhorar as minhas competências técnicas. A minha principal função envolveu o desenvolvimento de APIs e a implementação de padrões, o que apresentou alguns desafios, principalmente devido ao meu conhecimento limitado das tecnologias e à necessidade de aprender à medida que desenvolvia. Além disso, trabalhar no backend permitiu-me contribuir para a arquitetura do sistema ponto fundamental no desenvolvimento de todo projeto. Esses desafios foram superados com a ajuda dos meus colegas de equipe e estudando as tecnologias.",
+                "image": "./media/logoAssetbox.svg", 
+                "alt_text": "Imagem ilustrativa do Assetbox",
+                "technologies": ["Spring-boot", "POO", "Java", "React", "Bulma"],
+                "code_link": "https://github.com/Grupo-Syntax-Squad/AssetBox",
             }
         ];
 
@@ -74,13 +98,13 @@
     </script>
     <footer>
         <div class="container">
-            <p>Entre em contato para saber mais sobre meus projetos</p>
+            <p>Entre em contato para saber mais sobre mim e meus projetos</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/ryan-araujo0109/" target="_blank">LinkedIn</a>
-                <a href="#">GitHub</a>
+                <a href="https://github.com/ryandaraujo" target="_blank">GitHub</a>
                 <a href="#">ryanarajo@yahoo.com.br</a>
             </div>
-            <p>&copy; 2025 Meu Portfólio</p>
+            <p>&copy; 2025 Portfólio Ryan Araujo</p>
         </div>
     </footer>
 </body>
